@@ -31,10 +31,11 @@ body {
     justify-content: space-between;
     align-items: center;
     z-index: 100%;
+    background-color: rgba(255, 255, 255, 0.95);
 }
 
 .header img{
-    height: 8vw;
+    height: 7vw;
 }
 
 .navbar a { 
@@ -42,11 +43,10 @@ body {
     font-weight: 500;
     margin-left: 3vw;
     transition: .2s ease-in-out;
-}
-
-.navbar a:hover,
-.navbar a.active {
-    color: var(--myBlue);
+    padding: 0.5vw;
+    color: black;
+    position: relative;
+    overflow: hidden;
 }
 
 .home {
@@ -54,10 +54,11 @@ body {
     align-items: center;
     height: 100vh;
     padding: 0 10%;
-    background: url(./asset/quiz.jpg) no-repeat;
+    background: url("./asset/quiz.jpg") no-repeat;
     background-position: center;
     background-size: cover;
-    background-repeat: no-repeat;
+    background-color: rgba(0, 0, 0, 0.055);
+    background-blend-mode: color-burn;
 }
 
 .home-content {
@@ -86,7 +87,12 @@ body {
 
 .home-content p {
     position: relative;
-    font-size: 1.5vw;
+    font-size: 1.7vw;
     margin: 15px 0 40px;
     letter-spacing: 0.1vw;
+}
+
+.home-content p span{
+    color: red;
+    font-size: 2vw;
 }
