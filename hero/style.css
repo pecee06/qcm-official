@@ -16,8 +16,12 @@ a {
     color: white;
 }
 
-body {
-    color: #ededed;
+body{
+    background: url("./asset/quiz.jpg") no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-color: rgba(0, 0, 0, 0.055);
+    background-blend-mode: color-burn;
 }
 
 .header {
@@ -30,35 +34,51 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    z-index: 100%;
-    background-color: rgba(255, 255, 255, 0.95);
+    z-index: 5;
+    background-color: rgba(255, 255, 255, 0.9);
 }
 
 .header img{
     height: 7vw;
 }
 
+.navbar{
+    display: flex;
+}
+
+.navbar div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.navbar i{
+    font-size: 2vw;
+    padding: 0.7vw 0.8vw;
+    border-radius: 50%;
+    background-color: var(--myBlue);
+    color: white;
+    font-weight: 100;
+    position: absolute;
+    z-index: -1;
+}
+
 .navbar a { 
     font-size: 1.3vw;
     font-weight: 500;
-    margin-left: 3vw;
     transition: .2s ease-in-out;
     padding: 0.5vw;
     color: black;
+    opacity: 0;
     position: relative;
-    overflow: hidden;
 }
 
 .home {
     display: flex;
     align-items: center;
-    height: 100vh;
+    min-height: 100vh;
     padding: 0 10%;
-    background: url("./asset/quiz.jpg") no-repeat;
-    background-position: center;
-    background-size: cover;
-    background-color: rgba(0, 0, 0, 0.055);
-    background-blend-mode: color-burn;
 }
 
 .home-content {
