@@ -20,7 +20,7 @@ body{
     background: url("./asset/quiz.jpg") no-repeat;
     background-position: center;
     background-size: cover;
-    background-color: rgba(0, 0, 0, 0.055);
+    background-color: rgba(255, 255, 255, 0.1);
     background-blend-mode: color-burn;
 }
 
@@ -35,11 +35,11 @@ body{
     justify-content: space-between;
     align-items: center;
     z-index: 5;
-    background-color: rgba(255, 255, 255, 0.9);
+    background-color: rgba(249, 249, 249, 0.9);
 }
 
 .header img{
-    height: 7vw;
+    height: 5vw;
 }
 
 .navbar{
@@ -54,11 +54,10 @@ body{
 }
 
 .navbar i{
-    font-size: 2vw;
+    font-size: 1.6vw;
     padding: 0.7vw 0.8vw;
     border-radius: 50%;
-    background-color: var(--myBlue);
-    color: white;
+    background-color: white;
     font-weight: 100;
     position: absolute;
     z-index: -1;
@@ -76,14 +75,15 @@ body{
 
 .home {
     display: flex;
-    align-items: center;
     min-height: 100vh;
+    align-items: center;
     padding: 0 10%;
 }
 
 .home-content {
     width: 50%;
-    box-shadow: 0 0 6vw 3vw rgba(245, 245, 245, 0.2);
+/*    box-shadow: 0 0 6vw 3vw rgba(245, 245, 245, 0.2);*/
+    border: 1px solid white;
     padding: 1vw;
     position: relative;
     display: flex;

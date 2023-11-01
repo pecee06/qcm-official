@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
+
+:root{
+    --myBlue: #297dc7;
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+.heading{
+    padding: 0 2vw;
+}
+
+.heading span{
+    font-family: 'Satisfy', cursive;
+    color: white;
+    font-size: 4.8vw;
+    letter-spacing: 0.2vw;
+    position: relative;
+    margin: 0 0.5vw;
+}
+
+.heading span::after{
+    content: "glimpse";
+    font-family: 'Satisfy', cursive;
+    color: black;
+    position: absolute;
+    left: -0.3vw;
+    top: 0.3vw;
+    z-index: -1;
+}
+.heading span::before{
+    content: "glimpse";
+    font-family: 'Satisfy', cursive;
+    color: var(--myBlue);
+    position: absolute;
+    left: 0.2vw;
+    top: -0.1vw;
+    z-index: -2;
+}
+
+.carousel{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 80vh;
+}
+
+.carousel i{
+    font-size: 5vw;
+    position: relative;
+    cursor: pointer;
+}
+
+.carousel i:first-child::after{
+    content: "<<";
+    position: absolute;
+    font-size: 3vw;
+    color: var(--myBlue);
+    top: 20%;
+    left: -40%;
+    font-weight: 900;
+    animation: wobble1 1.5s infinite;
+}
+.carousel i:last-child::after{
+    content: ">>";
+    position: absolute;
+    font-size: 3vw;
+    color: var(--myBlue);
+    top: 20%;
+    left: 70%;
+    font-weight: 900;
+    animation: wobble2 1.5s infinite;
+}
+
+@keyframes wobble1 {
+    from{
+        transform: translate(0);
+    }
+    to{
+        transform: translate(-10px);
+    }
+}
+@keyframes wobble2 {
+    from{
+        transform: translate(0);
+    }
+    to{
+        transform: translate(10px);
+    }
+}
+
+.images{
+    /* overflow-x: hidden; */
+    overflow-y: hidden;
+    white-space: nowrap;
+    width: 800px;
+    scroll-behavior: smooth;
+}
